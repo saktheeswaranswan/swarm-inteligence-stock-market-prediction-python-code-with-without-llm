@@ -1,0 +1,48 @@
+### ✅ 881-line Colab-ready file. Here's everything you need to know:
+
+---
+
+## 🚀 How to Run in Google Colab
+
+**Step 1** — Open [colab.research.google.com](https://colab.research.google.com), create a new notebook
+
+**Step 2** — Upload the file OR copy-paste all code into one cell
+
+**Step 3** — Run it. It auto-installs all packages, then asks you:
+
+```
+👥 How many agents do you want in the swarm? (min 3, max 30): 15
+📈 Enter Indian stock ticker (e.g. RELIANCE.NS / TCS.NS / INFY.NS): RELIANCE.NS
+🌐 Paste a news URL for live sentiment (or press Enter to skip): https://economictimes.com/...
+🔁 How many debate rounds? (1–6, default 3): 4
+```
+
+---
+
+## 🤖 10 Agent Archetypes (auto-scaled to your number)
+
+| Agent | What they do |
+|---|---|
+| Momentum Trader | RSI + MACD + Moving average crossovers |
+| Contrarian | Fades crowd, buys extreme dips |
+| Fundamentalist | P/E, P/B, EPS growth, dividend yield |
+| Quant/Algo | All 7 signals weighted linearly |
+| Sentiment Analyst | Scrapes your URL + news mood |
+| Risk Manager | Volatility + beta dampener |
+| Technical Analyst | Golden cross, 52-week position |
+| Macro/Sector | Sector rotation, market cap tier |
+| Value-Trap Detector | Warns when cheap stocks are traps |
+| Breakout Hunter | Volume spikes above 50-DMA |
+
+If you pick 20 agents, it cycles all 10 types twice with different names.
+
+---
+
+## 📊 What the Output Shows
+
+- **Live NSE/BSE data** via `yfinance` (real price, P/E, RSI, MACD etc.)
+- **Each agent's reasoning** every round with confidence bar
+- **URL sentiment** blended in if you provide a link (Economic Times, Moneycontrol etc.)
+- **Final prediction**: `🚀 STRONG BUY / 📈 BUY / 🤝 HOLD / 📉 SELL / 🔻 STRONG SELL`
+- **Price target estimate** + stop loss level
+- **Score evolution table** across all rounds
